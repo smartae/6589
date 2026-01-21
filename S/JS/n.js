@@ -71,7 +71,7 @@ btn.addEventListener("click",(e)=>{
             msg.style.fontSize="2.5em";
             msg.style.fontWeight="600";
             msg.style.display="flex";
-            msg.addEventListener("click",(elm)=>{location.reload();});
+            msg.addEventListener("click",(elm)=>{document.location.reload();});
         }
         else
             f(a);
@@ -84,4 +84,5 @@ let cmp=0,allA=[],cCount=0;
 fetch(`/6589/get/JSON/65${(localStorage.getItem("S"))}89.json`).then((d)=>d.json()).then((data)=>{
     a=data;
     f(a);
+
 });
