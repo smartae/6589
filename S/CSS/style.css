@@ -1,0 +1,202 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #5c030b;
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+body nav{
+    z-index: 65;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 50px;
+    background-color: #350105;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 5px black;
+}
+body .container{
+    width:900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-top: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body nav .logo{
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:fit-content;
+    gap:5px;
+}
+body a.logo{
+    text-decoration: none;
+}
+body nav .logo .img{
+    background-image: url('/Assets/Icons/sae3.png');
+    width:35px;
+    height:35px;
+    background-size: cover;
+}
+
+body nav .logo div:last-child>span{
+    color:#7b322e;
+    display:inline-block
+}
+body nav .logo div:last-child>span::first-letter{
+    color:#5c030b;
+}
+
+body div.c{
+    width:100%;
+    background-color: #350105;
+    border-radius: 10px;
+}
+body div.c .qn{
+    width:100%; 
+    height: 50px;
+    background-color: #220003;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-size: 1.3em;
+}
+body div.c div.ig{
+    width:98%;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body div.c div.ans{
+    width:100%;
+    padding:15px;
+    background-color: #220003;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+body div.c div.ans>span{
+    cursor: pointer;
+    user-select: none;
+    background-color: #7b322e;
+    padding:5px;
+    width:50px;
+    height:50px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body div.c div.ts{
+    background-color: #220003;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-bottom:10px;
+    height: 80px;
+}
+body div.c div.ts button,body div.c div.ts{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+body div.c div.ts button{
+    width:80%;
+    height: 50px;
+    background-color: green;
+    color:white;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    opacity: .5;
+}
+body div.y{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.486);
+    color:white;
+    font-weight: 500;
+    font-size: 2.5em;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 15px;
+}
+body footer>div{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+body footer a{
+    color:white;
+    text-decoration: none;
+    font-weight: 700;
+}
+body footer a.wa{
+    display: inline-block;
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-image: url('/Assets/wa.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-color: #350105;
+}
+body footer div.A{
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3;
+    font-weight: 600;
+}
+body footer div.A>a{
+    width:30px;
+    aspect-ratio: 1/1;
+    background-image: url('/Assets/logo.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width:900px) {
+    body .container{
+        width:98%;
+    }
+}
+
+@media (max-width:600px) {
+    body footer{
+        flex-direction: column;
+    }
+}
