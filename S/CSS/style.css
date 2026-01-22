@@ -128,7 +128,7 @@ body div.c div.ts button{
     border-radius: 5px;
     opacity: .5;
 }
-body div.y{
+body div.y,body div.msg{
     position: fixed;
     top:0;
     left:0;
@@ -142,7 +142,10 @@ body div.y{
     justify-content: center;
     align-items: center;
 }
-
+body div.msg{
+    font-size: 2.5em;
+    font-weight: 600;
+}
 
 body footer{
     width: 100%;
@@ -199,4 +202,5 @@ body footer div.A>a{
     body footer{
         flex-direction: column;
     }
+
 }
