@@ -3,6 +3,7 @@ const img=document.querySelector("div.ig");
 const ans=document.querySelector("div.ans");
 const btn=document.querySelector("div.ts>button");
 const msg=document.querySelector("div.y");
+const msg2=document.querySelector("div.msg");
 const qn=document.querySelector("div.qn");
 let qc="40";
 document.querySelector("title").textContent=`السلسلة ${localStorage.getItem("S")} | Smart Auto Ecole`;
@@ -67,11 +68,9 @@ btn.addEventListener("click",(e)=>{
         allA.push({n:(cmp+1),yans:str,isans:isAns,});
         cmp++;
         if(`${cmp}` === qc){
-            msg.textContent=`${cCount}/${qc}`;
-            msg.style.fontSize="2.5em";
-            msg.style.fontWeight="600";
-            msg.style.display="flex";
-            msg.addEventListener("click",(elm)=>{document.location.reload();});
+            msg2.textContent=`${cCount}/${qc}`;
+            msg2.style.display="flex";
+            msg2.addEventListener("click",(elm)=>{document.location.reload();});
         }
         else
             f(a);
@@ -86,3 +85,4 @@ fetch(`/6589/get/JSON/65${(localStorage.getItem("S"))}89.json`).then((d)=>d.json
     f(a);
 
 });
+
